@@ -513,11 +513,6 @@ predictions = clf.predict(test_df)
 sub_file = pd.DataFrame({'ID_LAT_LON_YEAR_WEEK': test_eng.ID_LAT_LON_YEAR_WEEK, 'emission': predictions})
 sub_file.head()
 
-# dict_of_lists = {'iter_name':[],'clean_action':[],'value':[],'RMSE_Score':[],'pred_err_file':[]}
-# model_metadata = pd.DataFrame(dict_of_lists)
-# model_metadata.to_csv('/content/drive/MyDrive/Colab Notebooks/EY_Carbon_Prediction_Files/models_metadata.csv')
-# model_metadata
-
 # model_info = pd.read_csv('/content/drive/MyDrive/Colab Notebooks/EY_Carbon_Prediction_Files/models_metadata.csv')
 
 """####12.1. create iteration metadata"""
